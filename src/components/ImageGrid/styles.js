@@ -23,4 +23,8 @@ export const Image = styled.img`
   position: absolute;
   top: 0;
   left: 0;
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
