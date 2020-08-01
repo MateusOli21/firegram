@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const Container = styled.div`
   margin: 20px auto;
@@ -8,7 +9,7 @@ export const Container = styled.div`
   grid-gap: 30px;
 `;
 
-export const ImageWrapper = styled.div`
+export const ImageWrapper = styled(motion.div)`
   overflow: hidden;
   height: 0;
   padding: 50% 0;
@@ -16,7 +17,7 @@ export const ImageWrapper = styled.div`
   opacity: 0.9;
 `;
 
-export const Image = styled.img`
+export const Image = styled(motion.img)`
   min-width: 100%;
   min-height: 100%;
   max-width: 150%;

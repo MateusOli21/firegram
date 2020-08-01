@@ -21,6 +21,7 @@ export const Form = styled.form`
     border: 2px solid var(--primary);
     border-radius: 50%;
     color: var(--primary);
+    transition: 0.5s;
   }
 
   label:hover {

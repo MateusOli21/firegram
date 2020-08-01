@@ -10,8 +10,19 @@ function Modal({ selectedImage, setSelectedImage }) {
   }
 
   return (
-    <Backdrop className="backdrop" onClick={handleClick}>
-      <Image src={selectedImage} alt="selected pic" />
+    <Backdrop
+      className="backdrop"
+      onClick={handleClick}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+    >
+      <Image
+        src={selectedImage}
+        alt="selected pic"
+        initial={{ y: "-100vh" }}
+        animate={{ y: 0 }}
+        transition={{ duration: 0.4, ease: "easeOut" }}
+      />
     </Backdrop>
   );
 }

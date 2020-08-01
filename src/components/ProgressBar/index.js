@@ -13,7 +13,9 @@ function ProgressBar({ file, setFile }) {
     }
   }, [setFile, url]);
 
-  return <Progress progress={progress} />;
+  return (
+    <Progress initial={{ width: 0 }} animate={{ width: progress + "%" }} />
+  );
 }
 
 export default ProgressBar;

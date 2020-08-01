@@ -10,8 +10,19 @@ function ImageGrid({ setSelectedImage }) {
     <Container>
       {docs &&
         docs.map((doc) => (
-          <ImageWrapper key={doc.id} onClick={() => setSelectedImage(doc.url)}>
-            <Image src={doc.url} alt="uploaded pic" />
+          <ImageWrapper
+            key={doc.id}
+            onClick={() => setSelectedImage(doc.url)}
+            whileHover={{ opacity: 1 }}
+            layout
+          >
+            <Image
+              src={doc.url}
+              alt="uploaded pic"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.5 }}
+            />
           </ImageWrapper>
         ))}
     </Container>
