@@ -1,6 +1,6 @@
 # FireGram
 
-Um aplicação simples que reproduz uma galeria de fotos, onde é possível vizualizar as fotos existentes e adicionar novas.
+Um aplicação simples que reproduz uma galeria de fotos, onde é possível visualizar as fotos existentes e adicionar novas.
 
 ### Tecnologias
 
